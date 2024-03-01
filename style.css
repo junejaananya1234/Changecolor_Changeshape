@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.header_menu{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_1{
+    width: 13vw;
+    /* border: 2px solid rebeccapurple; */
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 50%;
+}
+.header_12{
+    width: 50%;
+    height: 50%;
+    display: block;
+    /* border: 2px solid yellow; */
+    position: relative;
+    background-color: white;
+}
+.header_123{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.triangle {
+    background-color: transparent;
+    position: relative;
+    left: 0px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 75px solid red;
+    border-right: 75px solid transparent;
+}
+
+.star {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid grey; 
+    position: relative;
+    display: inline-block;
+    transform: rotate(-35deg);
+    margin-right: 10px; /* Adjust spacing between shapes */
+}
+
+.star:before, .star:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    /* border-top: 10px solid red;  */
+    transform: rotate(35deg);
+}
+
+.star:after {
+    left: 0;
+    transform: rotate(-35deg);
+}
+
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background-color:green; 
+    position: relative;
+}
+
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 27.5px solid green;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 27.5px solid green; 
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: pink; /* Adjust color as needed */
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
